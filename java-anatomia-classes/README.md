@@ -37,3 +37,92 @@ A escrita de códigos de um programa é feita através da composição de, palav
 - Todas as classes precisam existir dentro do diretório `src`.
 
 - Todo nome de classe DEVE começar com letra MAIÚSCULA.
+
+## Padrão de nomeclatura
+
+Quando se trata de escrever códigos na linguagem Java, é recomendado seguir algumas convenções de escrita. 
+
+- **Arquivo .java**: Todo arquivo .java DEVE começar com letra MAIÚSCULA. Se a palavra for composta, a segunda palavra deve também ser maiúscula, exemplo:
+
+Calculadora.java, CalculadoraCientifica.java
+
+- **Nome da classe no arquivo**: A classe DEVE possuir o mesmo nome do arquivo.java, exemplo:
+
+```
+	// arquivo CalculadoraCientifica.java
+
+	public class CalculadoraCientifica {
+
+	}
+```
+
+- **Nome de variável**: Toda variável DEVE ser escrita com letra minúscula, porém se a palavra for composta, a primeira letra da segunda palavra deverá ser MAIÚSCULA, exemplo: `ano` e `anoFabricacao`. O nome dessa prática para nomear variáveis dessa forma se chama "camelCase".
+
+> Recomendações: Para declarar uma variável nós podemos utilizar caracteres, números e símbolos, porém, devemos seguir algumas regras da linguagem.
+
+* DEVE conter apenas letras, _ (underline), $ ou os números de 0 a 9;
+* DEVE **obrigatoriamente** se iniciar por uma letra (preferencialmente), _ ou $, jamais com número;
+* DEVE iniciar com uma letra minúscula (boa prática – ver abaixo);
+* NÂO pode conter espaços;
+* NÂO podemos usar palavras-chave da linguagem;
+* O nome DEVE ser **único** dentro de um escopo.
+
+## Declarando variáveis e métodos
+Como identificar a diferença entre, declaração de variáveis e métodos em nossa programa? Existe uma estrutura comum para ambas as finalidades, exemplo:
+
+- Declarar uma **variável** em Java segue sempre a seguinte estrutura:
+
+```
+	// Estrutura
+
+	Tipo NomeBemDefinido = Atribuicao (opcional em alguns casos)
+```
+
+```
+	public class App {
+
+    public static void main(String[] args)  { 			
+
+			String meuNome = "Daiana";
+			int anoFabricacao = 2023;
+			double altura = 1.62;
+			boolean verdadeira;
+			boolean verdadeira2 = false;
+			Dog spike; //observe que aqui a variável spike não tem valor, é normal
+
+			anoFabricacao = 2018; 
+
+    }
+
+}
+```
+
+- Declarar **métodos** em Java segue uma estrutura bem simples:
+
+```
+	// Estrutura
+
+	TipoRetorno NomeObjetivoNoInfinitivo Parametro(s)
+```
+
+```
+	public class App {
+
+    public static void main(String[] args)  { 			
+
+			String primeiroNome = "Daiana";
+			String segundoNome = "Araujo"; 
+
+			String nomeCompleto = nomeCompleto(primeiroNome, segundoNome);
+			System.out.println(nomeCompleto);
+
+    }
+
+		public static String nomeCompleto (String primeiroNome, String segundoNome){
+			return "Resultado do método " + primeitoNome.concat(" ").concat(segundoNome);
+		}
+
+}
+```
+
+> Como parte da estrutura de declaração de **variáveis** e **métodos**, também temos o aspecto da **visibilidade**, mas ainda não é necessário nesta etapa de estudos.
