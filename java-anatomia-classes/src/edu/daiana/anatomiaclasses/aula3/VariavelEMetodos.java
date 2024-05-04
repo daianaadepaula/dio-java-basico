@@ -1,3 +1,5 @@
+package edu.daiana.anatomiaclasses.aula3;
+
 public class VariavelEMetodos {
 	
 	public static void main(String[] args)  { 				

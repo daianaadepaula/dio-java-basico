@@ -126,3 +126,64 @@ Como identificar a diferença entre, declaração de variáveis e métodos em no
 ```
 
 > Como parte da estrutura de declaração de **variáveis** e **métodos**, também temos o aspecto da **visibilidade**, mas ainda não é necessário nesta etapa de estudos.
+
+## Indentação (indentation)
+
+Indentar é escrever o código do programa de forma **hierárquica**, facilitando assim a visualização e o entendimento do programa.
+
+#### Sem indentação
+
+```
+// arquivo BoletimEstudantil.java
+
+public class BoletimEstudantil {
+public static void main(String[] args) {
+int mediaFinal = 6;
+if(mediaFinal<6)	
+System.out.println("REPROVADO"); 
+else if(mediaFinal==6)
+System.out.println("PROVA MINERVA"); 
+else
+System.out.println("APROVADO"); 		
+}
+}
+```
+
+#### Com indentação
+
+```
+public class BoletimEstudantil {
+	public static void main(String[] args) {
+		int mediaFinal = 6;
+		if (mediaFinal < 6)
+			System.out.println("REPROVADO");
+		else if (mediaFinal == 6)
+			System.out.println("PROVA MINERVA");
+		else
+			System.out.println("APROVADO");
+	}
+}
+```
+
+## Organizando arquivos
+
+À medida que nosso sistema vai evoluindo, surgem novos arquivos (código fonte) em nossa estrutura de arquivos do projeto. Isso exige que seja realizado uma organização destes arquivos através de pacotes (packages).
+
+![Exemplo de organizador de arquivos](https://glysns.gitbook.io/~gitbook/image?url=https%3A%2F%2F1693191620-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FjFR9F4NToQ6FD39fU3wC%252Fuploads%252Fgit-blob-0e8fc13c780314b11e9dde37119c40cfa8817b48%252Fimage%2520%282%29%2520%281%29.png%3Falt%3Dmedia&width=768&dpr=1&quality=100&sign=5f4b446301d9b79e21fa129728f0d7d706f5685ee07f9559c483fb80e45ed77c)
+
+Com o uso de pacotes, as nossas classes (.java) passam a possuir duas identificações, o nome simples e nome qualificado:
+
+- Nome Simples: Nome do arquivo, exemplo `ContaBanco`.
+
+- Nome Qualificado: Nome do pacote + nome do arquivo, exemplo: `com.suaempresa.ContaBanco`.
+
+### Padrão da nomenclatura dos pacotes
+
+O padrão da Sun para dar nome aos pacotes é relativo ao nome da empresa que desenvolveou a classe:.
+
+`br.com.nomedaempresa.nomedoprojeto.subpacote`
+`br.com.nomedaempresa.nomedoprojeto.subpacote2`
+`br.com.nomedaempresa.nomedoprojeto.subpacote2.subpacote3`
+
+Os pacotes só têm letras minúsculas, não importa quantas palavras estejam contidas neles.
+

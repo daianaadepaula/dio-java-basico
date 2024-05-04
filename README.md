@@ -6,6 +6,6 @@ Repositório para armazenar todo o conteúdo do curso de Java Básico.
 
 [x] Padrão de Nomeclatura  
 [x] Declarando Variáveis e Métodos  
-[ ] Indentação  
-[ ] Organizando Arquivos  
-[ ] Java Beans
+[x] Indentação  
+[x] Organizando Arquivos  
+[ ] Java Beans  

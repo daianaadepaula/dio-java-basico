@@ -1,3 +1,5 @@
+package edu.daiana.anatomiaclasses.aula2;
+
 public class CalculadoraCientifica {
 	// Existe uma regra adicional para variáveis, quando na mesma queremos identificar que ela não sofrerá alteração de valor, exemplo: queremos determinar que uma variável de nome br sempre representará "Brasil" e nunca mudará seu valor, logo, determinamos como escrita o código abaixo:
 		
