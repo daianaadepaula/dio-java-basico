@@ -8,4 +8,4 @@ Repositório para armazenar todo o conteúdo do curso de Java Básico.
 [x] Declarando Variáveis e Métodos  
 [x] Indentação  
 [x] Organizando Arquivos  
-[ ] Java Beans  
+[x] Java Beans  
